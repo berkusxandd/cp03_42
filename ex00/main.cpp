@@ -3,22 +3,22 @@
 
 int main()
 {
-    ClapTrap A("A");
-    ClapTrap B("B");
+    ClapTrap ct1("CT1");
+    ClapTrap ct2("CT2");
 
-    A.setAttackDamage(11);
-    A.setEnergyPoints(1);
-    A.setHitPoints(5);
+    ct1.setAttackDamage(11);
+    ct1.setEnergyPoints(1);
+    ct1.setHitPoints(5);
     
-    B.setAttackDamage(5);
-    A.setEnergyPoints(3);
-    A.setHitPoints(5);
+    ct2.setAttackDamage(5);
+    ct2.setEnergyPoints(3);
+    ct2.setHitPoints(5);
 
-    A.attack("B");
-    B.takeDamage(A.getAttackDamage());
-    B.attack("A");
-    B.beRepaired(1);
-    B.attack("A");
-    A.takeDamage(B.getAttackDamage());
-    A.beRepaired(3);
+    ct1.attack("B");
+    ct2.takeDamage(A.getAttackDamage());
+    ct2.attack("A");
+    ct2.beRepaired(1);
+    ct2.attack("A");
+    ct1.takeDamage(B.getAttackDamage());
+    ct1.beRepaired(3);
 }

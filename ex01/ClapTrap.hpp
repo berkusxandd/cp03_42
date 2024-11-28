@@ -14,12 +14,10 @@ class ClapTrap
         ClapTrap(ClapTrap const &src);
         ClapTrap &operator=(ClapTrap const &src);
         ~ClapTrap();
-        
         int getHitPoints() const;
         int getEnergyPoints() const;
         int getAttackDamage() const;
         std::string getName();
-
         void setHitPoints(int amount);
         void setEnergyPoints(int amount);
         void setAttackDamage(int amount);

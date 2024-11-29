@@ -1,5 +1,5 @@
 #ifndef SCAVTRAP_HPP
-#define SCALTRAP_HPP
+#define SCAVTRAP_HPP
 
 #include "ClapTrap.hpp"
 class ScavTrap : public ClapTrap
